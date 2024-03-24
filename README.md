@@ -13,10 +13,10 @@ python -m main --method fedavg --dataset cifar10 --lr 0.05 --fluctuate 1 --sigma
 We list only the key parameters here:
 
 * method: FedAvg, 'fedavg'; FedPBC, 'fedpbc'; FedAvg-known, 'fedknown'; FedAvg-all, 'fedall'; F3AST, 'f3ast'; MIFA: 'mifa'.
-* fluctuate: 1: $$\gamma = 0.4$$; 2: $$\gamma = 0.2$$; 3: $$\gamma = 0.1$$.
-* sigma: $$\sigma_0$$.
-* prob_lower: $$\delta$$.
-* dirich_alpha: Dirichlet $$\alpha$$
+* fluctuate: 1: $\gamma = 0.4$; 2: $\gamma = 0.2$; 3: $\gamma = 0.1$.
+* sigma: $\sigma_0$.
+* prob_lower: $\delta$.
+* dirich_alpha: Dirichlet $\alpha$
 
 Please find the detailed configurations in 'config.py'.
 
