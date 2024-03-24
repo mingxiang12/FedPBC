@@ -10,7 +10,7 @@ parser.add_argument('--dataset', type=str, default='cifar10', help='svhn, cifar1
 parser.add_argument('--method', type=str, default='f3ast')  # algorithm
 parser.add_argument('--time_varying', type=int, default=1)
 parser.add_argument('--unreliable', type=str, default='bernoulli', help='bernoulli, markov-0.05, cyclic-100')  
-parser.add_argument('--fluctuate', type=int, default=1, help='1: 0.4, 2: 0.2, 3: 0.1, 4: 0.45')
+parser.add_argument('--fluctuate', type=int, default=1, help='1: 0.4, 2: 0.2, 3: 0.1')
         
 parser.add_argument('--lr', type=float, default=0.1)  
 parser.add_argument('--lr-global', type=float, default=1.0) 
