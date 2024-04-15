@@ -107,7 +107,7 @@ def varying_dynamics_pbc():
                     model.optimizer.step()
 
                 w_tmp = model.get_weight()  
-                w_tmp += (w_tmp - w_local[n].to('cuda')) * torch.tensor(lr_global).to(device)
+                w_tmp = w_local[n].to('cuda') + (w_tmp - w_local[n].to('cuda')) * torch.tensor(lr_global).to(device)
 
                 w_local[n] = w_tmp.to('cpu')
 
